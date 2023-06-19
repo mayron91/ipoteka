@@ -1,0 +1,59 @@
+.our_cons_wrapper {
+    width: 100%;
+    max-width: 1370px;
+    margin: 80PX auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        max-width: 495PX;
+        max-height: 507PX;
+    }
+}
+
+.our_cons_content {
+    width: 63%;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            padding-bottom: 30PX;
+        }
+
+        li::before {
+            color: #F4E861;
+            content: "●";
+            padding-right: 10px;
+        }
+    }
+}
+
+.our_cons_btn {
+    width: 420PX;
+    height: 68PX;
+    border-radius: 50PX;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #272727;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 40PX;
+        height: 40PX;
+        margin-right: 10px;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24PX;
+        line-height: 28PX;
+        color: #272727;
+    }
+}
