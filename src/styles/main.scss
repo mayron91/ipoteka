@@ -44,7 +44,6 @@ html, body {
 
 .container {
     width: 100%;
-    padding: 0 40px;
     margin: 0 auto;
     transition: $base-transition;
     @include respond-to('medium') {
@@ -63,13 +62,7 @@ html, body {
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
 
-.logo {
-    display: block;
-    max-width: 150px;
-    &__img {
-        width: 100%;
-    }
-}
+
 
 // ------------------------------------
 //      S E C T I O N S

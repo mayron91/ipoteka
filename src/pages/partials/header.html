@@ -1,12 +1,25 @@
 <header class="header">
     <div class="container">
-        <a href="/" class="logo">
-            <img src="img/logo.svg" alt="" class="logo__img">
-        </a>
+        <div class="header_nav">
 
-        <div class="header__contacts">
-            <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> <br>
-            <a href="tel:" class="phone">{{ vars.email }}</a>
+        
+        <a href="/" class="logo">
+            <img src="img/logo.png" alt="" class="logo__img">
+        </a>
+        <div class="nav">
+            <ul>
+                <li><a href="/">Цены</a></li>
+                <li><a href="/">услуги</a></li>
+                <li><a href="/">ПАРТНЕРЫ</a></li>
+                <li><a href="/">отзывы</a></li>
+            </ul>
         </div>
+        <div class="header__contacts">
+            <a href="/"><img src="img/youtube.svg" alt=""></a>
+            <a href="/"><img src="img/insta.svg" alt=""></a>
+            <a href="/"><img src="img/vk.svg" alt=""></a>
+            <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> <br>
+        </div>
+    </div>
     </div>
 </header>
