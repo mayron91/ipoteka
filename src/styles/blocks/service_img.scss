@@ -1,0 +1,32 @@
+.service_img_back {
+    position: absolute;
+width: 1243.09PX;
+height: 1243.09PX;
+left: -800PX;
+top: -420PX;
+
+background: #F4E861;
+transform: rotate(45deg);
+z-index: 0;
+}
+.service_img__wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.service_img_block {
+    margin-top: 80PX;
+    margin-right: 30PX;
+    img {
+        max-width: 410PX;
+        max-height: 427PX;
+    }
+    p {
+        margin-top: 10PX;
+        text-align: center;
+    }
+}

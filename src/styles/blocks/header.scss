@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    
+    z-index: 10;
     
     background: #FFFFFF;
     border-bottom: 2px solid #F7F7F7;
@@ -9,10 +9,10 @@
 .header_nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     height: 152PX;
-    max-width: 1290px;
+    max-width: 1150px;
     margin: 0 auto;
     width: 100%;
 }
