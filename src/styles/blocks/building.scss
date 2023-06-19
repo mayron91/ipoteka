@@ -1,0 +1,49 @@
+.building_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120PX;
+
+    img {
+        width: 50%;
+        max-width: 960PX;
+        max-height: 600PX;
+    }
+
+    .building_content {
+        width: 50%;
+        padding: 30PX 0 0 140PX;
+
+        h3 {
+            width: 50%;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        button {
+            width: 300PX;
+            height: 68PX;
+            border-radius: 50px;
+            margin-top: 60PX;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24PX;
+            line-height: 28PX;
+            text-align: center;
+            color: #272727;
+            background: #fff;
+        }
+
+        button:hover {
+            background: #272727;
+            color: #fff;
+        }
+
+        button:active {
+            background: #F4E861;
+            color: #272727;
+        }
+    }
+}
