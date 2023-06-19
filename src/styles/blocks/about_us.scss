@@ -1,0 +1,86 @@
+.about_us {
+    position: relative;
+    margin-top: 110PX;
+}
+
+.about_us_circle {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    z-index: 0;
+}
+
+.about_us_wrapper {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.about_us_wrapper_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        width: 50%;
+        max-width: 630px;
+        max-height: 500px;
+        z-index: 10;
+    }
+}
+
+.about_us_wrapper_text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 50px;
+}
+
+.advantages_wrapper {
+    margin-top: 140PX;
+    z-index: 10;
+    position: relative;
+
+    h2 {
+        text-align: center;
+
+    }
+}
+
+.advantages_wrapper_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.advantages_card {
+    width: 31%;
+    max-width: 410PX;
+    max-height: 200PX;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 60PX 40PX;
+    margin: 0 1%;
+
+    img {
+        max-width: 50PX;
+        max-height: 54PX;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24PX;
+        line-height: 28PX;
+        color: #272727;
+        padding-left: 30PX;
+    }
+}
