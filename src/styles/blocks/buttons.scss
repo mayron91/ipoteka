@@ -1,0 +1,24 @@
+.btn {
+    width: 300PX;
+    height: 68PX;
+    border-radius: 50px;
+    margin-top: 60PX;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24PX;
+    line-height: 28PX;
+    text-align: center;
+    color: #272727;
+    background: #fff;
+}
+
+.btn:hover {
+    background: #272727;
+    color: #fff;
+}
+
+.btn:active {
+    background: #F4E861;
+    color: #272727;
+}
