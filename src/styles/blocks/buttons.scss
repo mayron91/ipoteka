@@ -11,6 +11,7 @@
     text-align: center;
     color: #272727;
     background: #fff;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -23,9 +24,21 @@
     color: #272727;
 }
 .btn_post {
+    display: block;
+    text-align: center;
     background: #F4E861;
     color: #272727;
     border: #F4E861;
     margin: 0;
     margin-top: 20PX;
+    padding: 20PX;
+}
+.close {
+    background: url('/img/close.svg');
+    width: 22PX;
+    height: 22PX;
+    border: none;
+}
+.btn_center {
+    margin: 0 auto;
 }

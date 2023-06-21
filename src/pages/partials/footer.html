@@ -156,3 +156,71 @@ if ( totalElem > elemPerPage ) {
     })
     
     </script>
+    <!--stycky header-->
+<script>
+  $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.header').addClass('sticky')
+            } else{
+                $('.header').removeClass('sticky')
+            }
+        });
+</script> 
+<script>
+
+  $('.mask-phone').mask('+7 (999) 999-99-99');
+  
+  </script>
+
+  <script>
+$(window).click(function(close){
+  document.getElementById('close').onclick = function() {
+  document.getElementById('popup_service1').classList.add('hidden');
+}
+        });
+</script>
+<script>
+  document.getElementById('service1').addEventListener('click', function() {
+  var elementOne = document.getElementById('popup_service1');
+  var elementTwo = document.getElementById('header');
+  
+  if (elementOne.classList.contains("hidden")) {
+    elementOne.classList.remove("hidden");
+    elementTwo.classList.add("hidden");
+  } else {
+    elementOne.classList.add("show");
+    elementTwo.classList.remove("sticky");
+  }
+})
+</script>
+<script>
+  document.getElementById('service2').addEventListener('click', function() {
+  var elementOne = document.getElementById('popup_service2');
+  var elementTwo = document.getElementById('header');
+  
+  if (elementOne.classList.contains("hidden")) {
+    elementOne.classList.remove("hidden");
+    elementTwo.classList.add("hidden");
+  } else {
+    elementOne.classList.add("show");
+    elementTwo.classList.remove("sticky");
+  }
+})
+</script>
+<script>
+  document.getElementById('service3').addEventListener('click', function() {
+  var elementOne = document.getElementById('popup_service3');
+  var elementTwo = document.getElementById('header');
+  
+  if (elementOne.classList.contains("hidden")) {
+    elementOne.classList.remove("hidden");
+    elementTwo.classList.add("hidden");
+  } else {
+    elementOne.classList.add("show");
+    elementTwo.classList.remove("sticky");
+  }
+})
+</script>
+<script>
+    
+</script>

@@ -1,0 +1,52 @@
+/*popup*/
+.popup_back {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.56);
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+  }
+  .popup {
+    position: relative;
+    max-width: 900PX;
+    max-height: 98%;
+    margin: 10PX auto;
+    z-index: 999;
+    background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.04);
+  border-radius: 40px;
+  padding: 5PX 80PX; 
+  overflow: scroll;
+   h3 {
+    padding: 80PX 0 10PX 0 ;
+    margin: 0;
+   }
+   p {
+    font-size: 14PX;
+   }
+   button {
+    margin: 0 auto;
+    display: block;
+   }
+  } 
+  .close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  
+  #popup_service1 {
+    display: none;
+  }
+  #popup_service2 {
+    display: none;
+  }
+  #popup_service3 {
+    display: none;
+  }
+  .show {
+    display: block !important;
+  }
+  .hidden {
+    display: none;
+  }

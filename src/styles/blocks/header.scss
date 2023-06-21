@@ -74,3 +74,11 @@
         color: #272727;
     }
 }
+
+.sticky {
+    position: fixed;
+    z-index: 100;
+    margin: 0 auto; /* Only centers horizontally not vertically! */
+left: 0;
+right: 0;
+}

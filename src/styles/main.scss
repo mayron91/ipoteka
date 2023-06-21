@@ -34,7 +34,9 @@ html, body {
         font-size: 34PX;
     }
 }
-
+a {
+    text-decoration: none;
+}
 .site-wrapper {
     display: flex;
     flex-direction: column;
@@ -72,6 +74,7 @@ html, body {
 @import './blocks/youtube.scss';
 @import './blocks/cert.scss';
 @import './blocks/app.scss';
+@import './blocks/popup.scss';
 // ------------------------------------
 //      S E C T I O N S
 // ------------------------------------
