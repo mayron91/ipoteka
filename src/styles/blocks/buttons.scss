@@ -23,6 +23,7 @@
     background: #F4E861;
     color: #272727;
 }
+
 .btn_post {
     display: block;
     text-align: center;
@@ -33,12 +34,14 @@
     margin-top: 20PX;
     padding: 20PX;
 }
+
 .close {
     background: url('/img/close.svg');
     width: 22PX;
     height: 22PX;
     border: none;
 }
+
 .btn_center {
-    margin: 0 auto;
+    margin: 20PX auto;
 }

@@ -17,26 +17,32 @@ $base-transition: all 230ms ease;
     outline: none;
 }
 
-html, body {
+html,
+body {
     font-family: $font-family;
     color: $font-color;
     font-size: 16PX;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
     @include respond-from('laptop-hdpi') {
         font-size: 18PX;
     }
+
     @include respond-from('2K') {
         font-size: 21PX;
     }
+
     @include respond-from('UHD') {
         font-size: 34PX;
     }
 }
+
 a {
     text-decoration: none;
 }
+
 .site-wrapper {
     display: flex;
     flex-direction: column;
@@ -48,6 +54,7 @@ a {
     width: 100%;
     margin: 0 auto;
     transition: $base-transition;
+
     @include respond-to('medium') {
         padding-left: 20px;
         padding-right: 20px;
@@ -78,4 +85,3 @@ a {
 // ------------------------------------
 //      S E C T I O N S
 // ------------------------------------
-

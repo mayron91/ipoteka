@@ -1,226 +1,359 @@
 <footer class="footer">
-    <div class="container">
-        <div class="footer_wripper">
-            <div class="foo_contacts">
-                <h4>КОНТАКТЫ:</h4>
-                <p>Ипотечное агентство ПРОИПОТЕКА
-                    Мы поможем осуществить Вашу мечту!</p>
-                    <p>ИП Вельмицкий С.А. ОГРНИП 319774600634679</p>
-                    <p>{{ vars.address }}</p>
-                    <p>Телефон:{{ vars.phone }}</p>
-                    <div class="foo_icons">
-                        <a href=""><img src="img\foo\inst.svg" alt=""></a>
-                        <a href=""><img src="img\foo\vk.svg" alt=""></a>
-                    </div>
-            </div>
-            <div class="foo_nav">
-                <h4>Навигация</h4>
-                <ul>
-                    
-                    <li><a href="/">Цены</a></li>
-                    <li><a href="/">Калькулятор ипотеки</a></li>
-                    <li><a href="/">Партнеры</a></li>
-                    <li><a href="/">Этапы работы</a></li>
-                    <li><a href="/"> Договор Рефинансирование</a></li>
-                    <li><a href="/">Договор Ипотека</a></li>
-                </ul>
-
-            </div>
-            <div class="foo_map"><div style="position:relative;overflow:hidden;border-radius: 20px;"><a href="https://yandex.ru/maps/org/prazdnik/1062349409/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:relative;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:relative;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.444791%2C55.826665&mode=search&oid=1062349409&ol=biz&z=17.07" width="410" height="300" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+  <div class="container">
+    <div class="footer_wripper">
+      <div class="foo_contacts">
+        <h4>КОНТАКТЫ:</h4>
+        <p>Ипотечное агентство ПРОИПОТЕКА
+          Мы поможем осуществить Вашу мечту!</p>
+        <p>ИП Вельмицкий С.А. ОГРНИП 319774600634679</p>
+        <p>{{ vars.address }}</p>
+        <p>Телефон:{{ vars.phone }}</p>
+        <div class="foo_icons">
+          <a href="https://www.instagram.com/proipoteka.ru/"><img src="img\foo\inst.svg" alt=""></a>
+          <a href="https://vk.com/proipoteka"><img src="img\foo\vk.svg" alt=""></a>
         </div>
-        
+      </div>
+      <div class="foo_nav">
+        <h4>Навигация</h4>
+        <ul>
+
+          <li><a href="#service">Цены</a></li>
+          <li><a href="/">Калькулятор ипотеки</a></li>
+          <li><a href="#partners">Партнеры</a></li>
+          <li><a href="/">Этапы работы</a></li>
+          <li><a href="/"> Договор Рефинансирование</a></li>
+          <li><a href="/">Договор Ипотека</a></li>
+        </ul>
+
+      </div>
+      <div class="foo_map">
+        <div style="position:relative;overflow:hidden;border-radius: 20px;"><a
+            href="https://yandex.ru/maps/org/prazdnik/1062349409/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:relative;top:0px;"></a><a
+            href="https://yandex.ru/maps/213/moscow/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:relative;top:14px;"></a><iframe
+            src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.444791%2C55.826665&mode=search&oid=1062349409&ol=biz&z=17.07"
+            width="410" height="300" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+      </div>
     </div>
+
+  </div>
 </footer>
 <script>
-    Fancybox.bind("[data-fancybox]", {
+  Fancybox.bind("[data-fancybox]", {
     // Your custom options
-});
+  });
 </script>
 <script>
-$(window).on('load', function(){
+  $(window).on('load', function () {
 
-// Carousel Slider reviews//
+    // Carousel Slider reviews//
 
-let elemWidth = ( 100 * parseFloat($('.listBox li').css('width')) / parseFloat($('.containerBox').parent().css('width')) ); // Width of each element
-let elemPerPage = parseInt((100 / elemWidth)); // Elements per page 
-
-let marginLeft = 0;
-let count = 0;
-
-let totalElem = $('.listBox li').length; // Number of total elements
-let numSlides = Math.ceil(totalElem / elemPerPage); // Number of slides
-
-if ( totalElem > elemPerPage ) {
-
-  $('.arrow.back').on('click', function(){ // Go back
-
-    if ( marginLeft < 0 ) {
-
-      count--;
-      marginLeft = marginLeft + 100;
-
-      $('ul.listBox').animate({
-        marginLeft: marginLeft + "%"
-      }, 1500);
-
-    }
-
-  });
-
-  $('.arrow.forward').on('click', function(){ // Go forward
-
-    count++;
-
-    if ( count < numSlides ) {
-
-      if ( marginLeft <= 0 ) {
-
-        marginLeft = marginLeft - 100;
-
-        $('ul.listBox').animate({
-          marginLeft: marginLeft + "%"
-        }, 1500);
-
-      }
-
-    } else {
-
-      count--;
-
-    }
-
-  });
-
-}
-
-})
-
-</script>
-<script>
-    $(window).on('load', function(){
-    
-    // Carousel Slider cert//
-    
-    let elemWidth = ( 100 * parseFloat($('.listBoxCert li').css('width')) / parseFloat($('.containerBoxCert').parent().css('width')) ); // Width of each element
+    let elemWidth = (100 * parseFloat($('.listBox li').css('width')) / parseFloat($('.containerBox').parent().css('width'))); // Width of each element
     let elemPerPage = parseInt((100 / elemWidth)); // Elements per page 
-    
+
     let marginLeft = 0;
     let count = 0;
-    
-    let totalElem = $('.listBoxCert li').length; // Number of total elements
+
+    let totalElem = $('.listBox li').length; // Number of total elements
     let numSlides = Math.ceil(totalElem / elemPerPage); // Number of slides
-    
-    if ( totalElem > elemPerPage ) {
-    
-      $('.arrow.backCert').on('click', function(){ // Go back
-    
-        if ( marginLeft < 0 ) {
-    
+
+    if (totalElem > elemPerPage) {
+
+      $('.arrow.back').on('click', function () { // Go back
+
+        if (marginLeft < 0) {
+
           count--;
           marginLeft = marginLeft + 100;
-    
+
+          $('ul.listBox').animate({
+            marginLeft: marginLeft + "%"
+          }, 1500);
+
+        }
+
+      });
+
+      $('.arrow.forward').on('click', function () { // Go forward
+
+        count++;
+
+        if (count < numSlides) {
+
+          if (marginLeft <= 0) {
+
+            marginLeft = marginLeft - 100;
+
+            $('ul.listBox').animate({
+              marginLeft: marginLeft + "%"
+            }, 1500);
+
+          }
+
+        } else {
+
+          count--;
+
+        }
+
+      });
+
+    }
+
+  })
+
+</script>
+<script>
+  $(window).on('load', function () {
+
+    // Carousel Slider cert//
+
+    let elemWidth = (100 * parseFloat($('.listBoxCert li').css('width')) / parseFloat($('.containerBoxCert').parent().css('width'))); // Width of each element
+    let elemPerPage = parseInt((100 / elemWidth)); // Elements per page 
+
+    let marginLeft = 0;
+    let count = 0;
+
+    let totalElem = $('.listBoxCert li').length; // Number of total elements
+    let numSlides = Math.ceil(totalElem / elemPerPage); // Number of slides
+
+    if (totalElem > elemPerPage) {
+
+      $('.arrow.backCert').on('click', function () { // Go back
+
+        if (marginLeft < 0) {
+
+          count--;
+          marginLeft = marginLeft + 100;
+
           $('ul.listBoxCert').animate({
             marginLeft: marginLeft + "%"
           }, 1500);
-    
+
         }
-    
+
       });
-    
-      $('.arrow.forwardCert').on('click', function(){ // Go forward
-    
+
+      $('.arrow.forwardCert').on('click', function () { // Go forward
+
         count++;
-    
-        if ( count < numSlides ) {
-    
-          if ( marginLeft <= 0 ) {
-    
+
+        if (count < numSlides) {
+
+          if (marginLeft <= 0) {
+
             marginLeft = marginLeft - 100;
-    
+
             $('ul.listBoxCert').animate({
               marginLeft: marginLeft + "%"
             }, 1500);
-    
+
           }
-    
+
         } else {
-    
+
           count--;
-    
+
         }
-    
+
       });
-    
+
     }
-    
-    })
-    
-    </script>
-    <!--stycky header-->
+
+  })
+
+</script>
+<!--stycky header-->
 <script>
-  $(window).scroll(function(){
-            if($(this).scrollTop() > 100){
-                $('.header').addClass('sticky')
-            } else{
-                $('.header').removeClass('sticky')
-            }
-        });
-</script> 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.header').addClass('sticky')
+    } else {
+      $('.header').removeClass('sticky')
+    }
+  });
+</script>
 <script>
 
   $('.mask-phone').mask('+7 (999) 999-99-99');
-  
-  </script>
 
-  <script>
-$(window).click(function(close){
-  document.getElementById('close').onclick = function() {
-  document.getElementById('popup_service1').classList.add('hidden');
-}
+</script>
+
+<script>
+  $(window).click(function (close) {
+    document.getElementById('close').onclick = function () {
+      document.getElementById('popup_service1').classList.add('hidden');
+    }
+  });
+</script>
+<script>
+  document.getElementById('service1').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service1');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('service2').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service2');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('service3').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service3');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('servicebuild').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service3');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('service4').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service4');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('service5').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service5');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('service6').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service6');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  document.getElementById('service7').addEventListener('click', function () {
+    var elementOne = document.getElementById('popup_service7');
+    var elementTwo = document.getElementById('header');
+
+    if (elementOne.classList.contains("hidden")) {
+      elementOne.classList.remove("hidden");
+      elementTwo.classList.add("hidden");
+    } else {
+      elementOne.classList.add("show");
+      elementTwo.classList.remove("sticky");
+    }
+  })
+</script>
+<script>
+  class WeeSlider extends HTMLElement {
+    constructor() {
+      super();
+      this.loopSlides = this.dataset.loop === 'true';
+      this.slides = [...this.querySelectorAll('.wee-slider__slide')];
+      this.navDots = [...this.querySelectorAll('.wee-slider__navdot')];
+      this.buttons = [...this.querySelectorAll('.wee-slider__buttons button')];
+      this.handleButtonClick = this.handleButtonClick.bind(this);
+      this.buttons.forEach(button => button.addEventListener('click', this.handleButtonClick));
+      this.navDots.forEach((navDot, index) => navDot.addEventListener('click', () => {
+        this.handleSlideChange(index);
+      }));
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(({ target, isIntersecting }) => {
+          const slideIndex = this.slides.indexOf(target);
+          target.classList.toggle('visible', isIntersecting);
+          this.navDots[slideIndex].classList.toggle('visible', isIntersecting);
+          if (!this.loopSlides) this.handleSlideButtonActive();
         });
-</script>
-<script>
-  document.getElementById('service1').addEventListener('click', function() {
-  var elementOne = document.getElementById('popup_service1');
-  var elementTwo = document.getElementById('header');
-  
-  if (elementOne.classList.contains("hidden")) {
-    elementOne.classList.remove("hidden");
-    elementTwo.classList.add("hidden");
-  } else {
-    elementOne.classList.add("show");
-    elementTwo.classList.remove("sticky");
+      }, { threshold: 0.9 });
+      this.slides.forEach(slide => observer.observe(slide));
+      this.classList.add('loaded');
+    }
+
+    handleButtonClick(event) {
+      const { classList } = event.currentTarget;
+      const isNext = classList.contains('wee-slider__button-next');
+      const modifier = isNext ? 1 : -1;
+      const condition = slide => slide.classList.contains('visible');
+      let index = isNext ? this.slides.findLastIndex(condition) : this.slides.findIndex(condition);
+      index = index !== -1 ? index + modifier : (isNext ? 0 : this.slides.length - 1);
+      if (this.loopSlides) index = (index + this.slides.length) % this.slides.length;
+      this.handleSlideChange(index);
+    }
+
+    handleSlideChange(index) {
+      this.slides.forEach((slide, i) => {
+        if (i === index) slide.scrollIntoView();
+      });
+      this.navDots.forEach((navDot, i) => {
+        navDot.classList.toggle('active', i === index);
+      });
+    }
+
+    handleSlideButtonActive() {
+      this.buttons.forEach(button => {
+        const isNext = button.classList.contains('wee-slider__button-next');
+        const slide = isNext ? this.slides[this.slides.length - 1] : this.slides[0]
+        button.disabled = slide.classList.contains('visible');
+      });
+    }
   }
-})
-</script>
-<script>
-  document.getElementById('service2').addEventListener('click', function() {
-  var elementOne = document.getElementById('popup_service2');
-  var elementTwo = document.getElementById('header');
-  
-  if (elementOne.classList.contains("hidden")) {
-    elementOne.classList.remove("hidden");
-    elementTwo.classList.add("hidden");
-  } else {
-    elementOne.classList.add("show");
-    elementTwo.classList.remove("sticky");
-  }
-})
-</script>
-<script>
-  document.getElementById('service3').addEventListener('click', function() {
-  var elementOne = document.getElementById('popup_service3');
-  var elementTwo = document.getElementById('header');
-  
-  if (elementOne.classList.contains("hidden")) {
-    elementOne.classList.remove("hidden");
-    elementTwo.classList.add("hidden");
-  } else {
-    elementOne.classList.add("show");
-    elementTwo.classList.remove("sticky");
-  }
-})
-</script>
-<script>
-    
+
+  customElements.define('wee-slider', WeeSlider);
+
 </script>
