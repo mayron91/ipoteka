@@ -1,0 +1,77 @@
+.swiper_cert {
+    margin-top: 190PX;
+    background: #F9F9F9;
+        h2 {
+            text-align: center;
+        }
+    }
+    li {
+      list-style: none;
+    }
+    
+    
+    .hidden {
+      display: none;
+    }
+    
+    .masterBoxCert {
+      position:relative;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .containerBoxCert {
+      overflow:hidden;
+      width: 100%;
+      max-width: 1290PX;
+      margin: 0 auto;
+    }
+    
+    .listBoxCert li{
+      width:25%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
+      height: auto;
+      float:left;
+      padding: 1%;
+    }
+    
+    .listBoxCert {
+      width: 200%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
+      display: flex;
+    }
+    
+    .contentCert {
+        width: 100%;
+        margin-right: 1%;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    
+    .contentCert img {
+      width: 100%;
+      
+    }
+    
+    
+    .arrow{
+      position:absolute;
+      font-size:4rem;
+      color: #111;
+      cursor:pointer;
+      top: 45%;
+    
+    }
+    
+    .arrow.backCert{
+      left: 13rem;
+      transform: scale(-1, 1);
+    }
+    
+    .arrow.forwardCert{
+      width: 8rem;
+      right: 10rem;
+    }
+    
+    

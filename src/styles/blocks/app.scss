@@ -1,0 +1,85 @@
+.application {
+    width: 100%;
+    background: #F4E861;
+    min-height: 936PX;
+    position: relative;
+    margin-top: 50PX;
+    h2 {
+        text-align: center;
+        padding-top: 50PX;
+    }
+}
+.app_back {
+width: 600px;
+height: 600px;
+top: 130PX;
+left: -480PX;
+position: absolute;
+background: #FFFFFF;
+transform: rotate(45deg);
+}
+.app_wrapper {
+    position: relative;
+    max-width: 630PX;
+    min-height: 600PX;
+    margin: 0 auto;
+    background: #FFFFFF;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.04);
+border-radius: 40px;
+padding: 60PX 80PX;
+p {
+    text-align: center;
+}
+}
+.app_enroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+        margin: 10PX 0;
+        width: 420px;
+height: 68px;
+border: 2px solid #DBDBDB;
+filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.04));
+border-radius: 8px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+color: #A3A3A3;
+padding-left: 40PX;
+    }
+    select {
+        margin: 10PX 0;
+        width: 420px;
+height: 68px;
+border: 2px solid #DBDBDB;
+filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.04));
+border-radius: 8px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+color: #A3A3A3;
+padding-left: 40PX;
+    }  
+    option {
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #272727;
+    height: 67PX !important;
+    padding: 5PX 0;
+    }  
+    select option:checked,
+select option:hover {
+    box-shadow: 0 0 10px 100px #F4E861 inset;;
+}
+select:focus > option:checked { 
+    background: #F4E861 !important;
+}
+}
