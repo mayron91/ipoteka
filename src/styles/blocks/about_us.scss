@@ -84,3 +84,28 @@
         padding-left: 30PX;
     }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .about_us_circle {
+        display: none;
+    } 
+    .advantages_card {
+        flex-direction: column;
+        width: 48%;
+       
+        p {
+            padding: 0;
+            font-size: 18PX;
+        }
+    }
+    .about_us_wrapper_content {
+        flex-direction: column-reverse;
+    }
+    .about_us_wrapper_text {
+        width: 100%;
+        padding: 0 10px;
+        
+        p {
+            text-align: left;
+        }
+    }
+}

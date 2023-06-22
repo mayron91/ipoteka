@@ -42,3 +42,8 @@
         padding: 30PX 0 0 5% !important;
     }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .building {
+        display: none;
+    }
+}

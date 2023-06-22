@@ -64,3 +64,12 @@ line-height: 21PX;
         padding: 0 10px;
     }
   }
+  @media ( min-width: 320px) and (max-width: 1024px) {
+    .footer_wripper {
+        flex-direction: column;
+    }
+    .foo_map {
+        max-width: 335PX;
+        height: auto;
+    }
+}

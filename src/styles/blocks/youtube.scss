@@ -21,3 +21,11 @@
         }
 }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .youtube_wrapper {
+        iframe {
+            width: 350PX;
+            height: 250PX;
+        }
+}
+}

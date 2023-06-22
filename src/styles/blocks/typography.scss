@@ -23,3 +23,27 @@ font-size: 18PX;
 line-height: 21PX;
 color: #272727;
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    h2 {
+        color: #272727;
+font-size: 36PX;
+font-family: Roboto;
+font-weight: 800;
+        }
+        h3 {
+            color: #272727;
+            font-size: 28PX;
+            line-height: 23PX;
+            font-family: Roboto;
+            font-weight: 800;
+        }
+        
+        li, p {
+            color: #272727;
+            text-align: center;
+            font-size: 16PX;
+            font-family: Roboto;
+            line-height: 130%;
+            
+        }
+}

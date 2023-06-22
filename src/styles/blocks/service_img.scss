@@ -43,3 +43,21 @@
         max-width: 1024PX;
     }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .service_img_back {
+        display: none;
+    }
+    .service_img__wrapper {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .service_img_block {
+        width: 100%;
+         img {
+            width: 100%;
+            min-width: 335px;
+max-height: 200px;
+object-fit: cover;
+         }
+    }
+}

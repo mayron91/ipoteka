@@ -60,3 +60,21 @@
         color: #272727;
     }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .our_cons_wrapper {
+        flex-direction: column;
+        img {
+            display: none;
+        }
+    }
+    .not_hid {
+        display: block !important;
+    }
+    .our_cons_wrapper {
+        margin: 0 auto;
+    }
+    .our_cons_btn {
+        width: 320PX;
+        height: 68PX;
+    }
+}
