@@ -34,12 +34,13 @@ li {
 }
 
 .listBox {
-  width: 297%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
+  width: 495%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
   display: flex;
 }
 
 .content {
     width: 100%;
+    max-width: 410PX;
     min-height: 550PX;
     margin-right: 1%;
   display: flex;

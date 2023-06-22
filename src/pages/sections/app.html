@@ -3,23 +3,39 @@
     <div class="container">
         <h2>Оставьте заявку</h2>
         <div class="app_wrapper">
-            <p>Вы готовы воспользоваться нашими услугами или у вас появились вопросы? Наш менеджер позвонит вам в ближайшее время.</p>
-            <form name="enroll" class="app_enroll" method="post" action="">
-                <input type="text" value="Ваше Имя">
-                <input type="text" value="+7(9__)___-__-__">
-                <select>
-                    <option value="" disabled="" selected="">Услуга</option>
-                    <option value="">Умный риелтор</option>
-                    <option value="">Ипотека без подтверждения доходов</option>
-                    <option value="">Ипотека на строительство</option>
-                    <option value="">Продажа квартиры</option>
-                    <option value="">Риелтор онлайн</option>
-                    <option value="">Ипотека</option>
-                    <option value="">Покупка новостройки</option>
-                </select>
-                <button class="btn btn_post">Отправить</button>
+            <p>Вы готовы воспользоваться нашими услугами или у вас появились вопросы? Наш менеджер позвонит вам в
+                ближайшее время.</p>
+            <form id="wdh_form" name="enroll" class="app_enroll" method="post" action="">
+                <input type="text" name="name" value="Ваше Имя">
+                <input id="phone" name="phone" type="text" class="mask-phone form-control" placeholder="+7(9__)___-__-__">
+                <div class="itc-select" id="select-1">
+                    <!-- Кнопка для открытия выпадающего списка -->
+                    <button type="button" class="itc-select__toggle" name="serv" value="" data-select="toggle"
+                        data-index="-1">Услуга</button>
+                    <!-- Выпадающий список -->
+                    <div class="itc-select__dropdown">
+                        <ul class="itc-select__options" >
+                                                  <li class="itc-select__option" data-select="option" data-value="Умный риелтор"
+                                data-index="0">Умный риелтор</li>
+                            <li class="itc-select__option" data-select="option"
+                                data-value="Ипотека без подтверждения доходов" data-index="1">Ипотека без подтверждения
+                                доходов</li>
+                            <li class="itc-select__option" data-select="option" data-value="Ипотека на строительство"
+                                data-index="2">Ипотека на строительство</li>
+                            <li class="itc-select__option" data-select="option" data-value="Продажа квартиры"
+                                data-index="3">Продажа квартиры</li>
+                            <li class="itc-select__option" data-select="option" data-value="Риелтор онлайн"
+                                data-index="4">Риелтор онлайн</li>
+                            <li class="itc-select__option" data-select="option" data-value="Ипотека" data-index="5">
+                                Ипотека</li>
+                            <li class="itc-select__option" data-select="option" data-value="Покупка новостройки"
+                                data-index="6">Покупка новостройки</li>
+                        </ul>
+                    </div>
+                </div>
+                <button  type='submit' class="btn btn_post">Отправить</button>
             </form>
         </div>
     </div>
-    
+
 </section>
