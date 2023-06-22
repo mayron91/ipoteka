@@ -25,3 +25,20 @@
        
     }
 }
+@media ( min-width: 1025px) and (max-width: 1550px) {
+    .building_wrapper {
+        img {
+            object-fit: cover;
+        height: 600px;
+        }
+      }
+      .service_img_back {
+        left: -1050PX;
+        top: -420PX;
+    }
+}
+@media ( min-width: 1025px) and (max-width: 1439px) {
+    .building_content {
+        padding: 30PX 0 0 5% !important;
+    }
+}

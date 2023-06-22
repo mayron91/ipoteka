@@ -9,5 +9,15 @@
 .youtube_wrapper {
     iframe {
         border-radius: 40px;
+        width: 1280PX;
+        height: 600PX;
     }
+}
+@media ( min-width: 1025px) and (max-width: 1439px) {
+    .youtube_wrapper {
+        iframe {
+            width: 1024PX;
+            height: 550PX;
+        }
+}
 }

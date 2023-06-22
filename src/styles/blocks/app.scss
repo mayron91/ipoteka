@@ -37,7 +37,9 @@ p {
     align-items: center;
     input {
         margin: 10PX 0;
-        width: 420px;
+        width: 100%;
+        max-width: 470px;
+
 height: 68px;
 border: 2px solid #DBDBDB;
 filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.04));
@@ -82,4 +84,8 @@ select option:hover {
 select:focus > option:checked { 
     background: #F4E861 !important;
 }
+}
+.itc-select__toggle {
+    width: 100%;
+    max-width: 470PX;
 }

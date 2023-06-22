@@ -65,13 +65,21 @@
     }
     
     .arrow.backCert{
-      left: 13rem;
-      transform: scale(-1, 1);
+      left: 8%;
+  transform: scale(-1, 1);
+  z-index: 10;
     }
     
     .arrow.forwardCert{
       width: 8rem;
-      right: 10rem;
+  right: 1%;
     }
-    
-    
+    @media ( min-width: 1025px) and (max-width: 1600px) {
+      .arrow.backCert{
+        left: 6%;
+      }
+      
+      .arrow.forwardCert{
+        right: 0;
+    }
+  }

@@ -59,3 +59,8 @@ line-height: 21PX;
         margin-right: 12PX;
     }
 }
+@media ( min-width: 1025px) and (max-width: 1439px) {
+    .footer_wripper {
+        padding: 0 10px;
+    }
+  }
