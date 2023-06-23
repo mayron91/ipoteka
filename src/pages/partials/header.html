@@ -19,25 +19,25 @@
             <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> <br>
         </div>
     </div>
-    <div class="header_nav_mob">
-        <a href="/" class="logo">
-            <img src="img/logo_mob.png" alt="" class="logo__img">
-        </a>
-       <nav role="navigation">
-  <div id="menuToggle">
-        <input type="checkbox" />
-      <span></span>
-    <span></span>
-    <span></span>
-      <ul id="menu">
-      <a href="#service"><li>Цены</li></a>
-      <a href="#service"><li>услуги</li></a>
-      <a href="#partners"><li>ПАРТНЕРЫ</li></a>
-      <a href="#reviews"><li>отзывы</li></a>
-      
-    </ul>
-  </div>
-</nav>
-    </div>
+        
+            <header class = "header ">
+            <div class="header__container header_nav_mob">
+                <a href="/" class="logo">
+                    <img src="img/logo_mob.png" alt="" class="logo__img">
+                </a> 
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+        
+                <nav class="header__nav">
+                    <ul class="menu header__menu">
+                        <li><a href="#service" class="menu__item">Цены</a></li>
+                        <li><a href="#service" class="menu__item">услуги</a></li>
+                        <li><a href="#partners" class="menu__item">ПАРТНЕРЫ</a></li>
+                        <li><a href="#reviews" class="menu__item">отзывы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     </div>
 </header>

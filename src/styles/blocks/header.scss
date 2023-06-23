@@ -74,7 +74,9 @@
         color: #272727;
     }
 }
-
+.header_nav_mob {
+  display: none;
+}
 .sticky {
     position: fixed;
     z-index: 100;
@@ -95,163 +97,103 @@ right: 0;
         width: auto;
     }
     .header_nav_mob {
-        display: flex;
-        flex-direction: row;
+      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 84PX;
     }
     .service_img__wrapper {
         z-index: 0;
     }
   .header {
     border: none;
+    height: 100PX;
   }
 
-  #menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 40px;
-  right: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #272727;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 90vw;
-  height: auto;
-  margin: -100px 0 0 -50px;
-  padding-top: 125px;
-  padding-bottom: 125px;
-  right: -200%;
-  background: #fff;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  background: #FFF;
-box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.04);
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  color: #272727;
-font-size: 18PX;
+  .header__nav {
+    display: block;
+    position: absolute;
+      top: 75px;
+      left: 0;
+      background: #fff;
+      box-shadow: #ccc;
+      width: 100%;
+      box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+      transition: all 0.4s ease;
+    left:-100%;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header__nav.open-menu{
+      left:0;
+  }
+  .header__menu li {
+    margin: 10px 0px 10px -30px;
+    padding-top: 20PX;
+      font-size: 14px;
+      height: 61PX;
+      a {
+        color: #272727;
+font-size: 18px;
 font-family: Roboto;
 text-transform: uppercase;
-}
-#menu li:hover 
-{
-  background: #F4E861;
-}
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
+      }
+    }
+    .header__menu li:hover, .header__menu li:active {
+      background: #F4E861;
+    }
+  .menu-burger__header {
+    position: relative;
+      width: 30px;
+      height: 35px;
+      display: block;
+      margin-left: 10px;
+     }
+  .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+    height: 3px;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+  }
+  .menu-burger__header span{
+    top: 16px;
+  }
+  .menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+  }
+  .menu-burger__header:after{
+    bottom: 5px;
+  }
+  .menu-burger__header:before{
+    top: 5px;
+  }
+  .menu-burger__header.open-menu span {
+    opacity:0; 
+      transition: 0.5s; 
+  }
+  .menu-burger__header.open-menu:before {
+    transform: rotate(45deg);
+      top: 16px;
+      transition: 0.4s;
+  }
+  .menu-burger__header.open-menu:after {
+    transform: rotate(-45deg);
+      bottom: 16px;
+      transition: 0.4s;
+  }
+  
+  header {
+    height: 60px;
+  }
+  .content-wrapper {
+      margin-top: 48px;
+  }
+  .fixed-pade {
+      overflow: hidden;
+  }
 }

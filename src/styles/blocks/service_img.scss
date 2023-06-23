@@ -59,5 +59,18 @@
 max-height: 200px;
 object-fit: cover;
          }
+         p {
+            padding: 10PX 0 20PX 0;
+         }
+    }
+    .our_cons_content {
+        width: 100%;
+        padding: 0 10px;
+        ul {
+            li {
+                text-align: left;
+                padding: 10px 0;
+            }
+        }
     }
 }

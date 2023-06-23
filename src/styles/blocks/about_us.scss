@@ -88,6 +88,12 @@
     .about_us_circle {
         display: none;
     } 
+    .about_us {
+        margin-top: 10PX;
+        h2 {
+            text-align: left;
+        }
+    }
     .advantages_card {
         flex-direction: column;
         width: 48%;
@@ -99,6 +105,9 @@
     }
     .about_us_wrapper_content {
         flex-direction: column-reverse;
+        img {
+            width: 100%;
+        }
     }
     .about_us_wrapper_text {
         width: 100%;
@@ -107,5 +116,14 @@
         p {
             text-align: left;
         }
+    }
+    .advantages_wrapper {
+    margin-top: 40PX;
+        h2 {
+            text-align: left;
+        }
+    }
+    .advantages_card {
+        padding: 0;
     }
 }
