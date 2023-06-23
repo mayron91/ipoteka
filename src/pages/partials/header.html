@@ -23,21 +23,21 @@
         <a href="/" class="logo">
             <img src="img/logo_mob.png" alt="" class="logo__img">
         </a>
-        <nav class="main-nav hamburger-menu">
-            <!--   элемент, по которому юзер будет кликать  -->
-              <input id="menu__toggle" type="checkbox" />
-              <label class="menu__btn" for="menu__toggle">
-                <span></span>
-              </label>
-              
-            <!--   /* наше меню */ -->
-              <ul class="menu__box">
-                <li><a class="menu__item" href="#service">Цены</a></li>
-                <li><a class="menu__item" href="#service">услуги</a></li>
-                <li><a class="menu__item" href="#partners">ПАРТНЕРЫ</a></li>
-                <li><a class="menu__item" href="#reviews">отзывы</a></li>
-              </ul>
-            </nav>
+       <nav role="navigation">
+  <div id="menuToggle">
+        <input type="checkbox" />
+      <span></span>
+    <span></span>
+    <span></span>
+      <ul id="menu">
+      <a href="#service"><li>Цены</li></a>
+      <a href="#service"><li>услуги</li></a>
+      <a href="#partners"><li>ПАРТНЕРЫ</li></a>
+      <a href="#reviews"><li>отзывы</li></a>
+      
+    </ul>
+  </div>
+</nav>
     </div>
     </div>
 </header>
