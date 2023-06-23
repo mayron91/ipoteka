@@ -45,3 +45,8 @@
 .btn_center {
     margin: 20PX auto;
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .btn {
+        width: 255PX;
+    }
+}

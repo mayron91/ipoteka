@@ -317,3 +317,33 @@ wee-slider .wee-slider__buttons button:before {
     margin-top: 10PX;
   }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+  wee-slider .wee-slider__slide {
+    min-width: 295PX;
+  }
+  .carousel__snapper_wrapper {
+    flex-direction: column-reverse;
+    min-height: 546PX;
+  }
+  .carousel__snapper_wrapper_right {
+    img {
+      width: 100%;
+    }
+
+  }
+  .carousel__snapper_price {
+    display: none;
+  }
+  .service_back {
+    background: none;
+    border: none;
+  }
+  .carousel__snapper_wrapper_left {
+    padding: 0 10px; ul {
+      display: none;
+    }
+  }
+  .carousel__snapper_price_sub {
+    display: none;
+  }
+}
