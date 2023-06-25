@@ -90,6 +90,7 @@
     } 
     .about_us {
         margin-top: 30PX;
+        padding: 0 20px;
         h2 {
             text-align: left;
         }
@@ -125,5 +126,8 @@
     }
     .advantages_card {
         padding: 0;
+    }
+    .advantages_wrapper_content {
+        justify-content: center;
     }
 }

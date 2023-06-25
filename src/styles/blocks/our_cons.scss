@@ -44,7 +44,7 @@
     border: 2px solid #272727;
     justify-content: center;
     align-items: center;
-
+    margin: 0 auto;
     img {
         width: 40PX;
         height: 40PX;
@@ -76,5 +76,8 @@
     .our_cons_btn {
         width: 320PX;
         height: 68PX;
+    }
+    .our_cons_content {
+        width: 100%;
     }
 }

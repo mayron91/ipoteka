@@ -64,17 +64,13 @@ line-height: 21PX;
         padding: 0 10px;
     }
   }
-  @media ( min-width: 320px) and (max-width: 1024px) {
+  @media ( min-width: 801px) and (max-width: 1024px) {
     .footer_wripper {
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 10px;
     }
-    .foo_map {
-        max-width: 335PX;
-        height: auto;
-    }
     .foo_contacts p {
-        padding: 10PX 0;
+        padding: 10PX;
         text-align: left;
         font-family: Roboto;
 font-size: 12PX;
@@ -86,6 +82,45 @@ text-align: left;
     }
     .foo_nav {
         margin-top: 40PX;
+        padding: 10PX;
+    }
+    .foo_nav ul, .foo_nav li {
+        text-align: left;
+        
+
+    }
+    .foo_nav li a {
+        font-family: Roboto;
+        font-size: 12PX;
+        font-weight: 400;
+        line-height: 17PX;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+  }
+  @media ( min-width: 320px) and (max-width: 800px) {
+    .footer_wripper {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .foo_map {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .foo_contacts p {
+        padding: 10PX;
+        text-align: left;
+        font-family: Roboto;
+font-size: 12PX;
+font-weight: 400;
+line-height: 14PX;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+    .foo_nav {
+        margin-top: 40PX;
+        padding: 10PX;
     }
     .foo_nav ul, .foo_nav li {
         text-align: left;

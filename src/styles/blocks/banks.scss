@@ -12,8 +12,21 @@
         width: 100%;
     }
 }
-@media ( min-width: 320px) and (max-width: 1024px) {
+.gallery_mob_banks {
+    display: none;
+}
+@media ( min-width: 320px) and (max-width: 600px) {
     .banks {
         margin-top: 0PX;
+    }
+    .gallery_banks {
+        display: none;
+    }
+    .gallery_mob_banks {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+        }
     }
 }

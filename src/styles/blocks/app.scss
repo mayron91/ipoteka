@@ -88,6 +88,7 @@ select:focus > option:checked {
 .itc-select__toggle {
     width: 100%;
     max-width: 470PX;
+    margin: 0 auto;
 }
 @media ( min-width: 320px) and (max-width: 1024px) {
     .application {

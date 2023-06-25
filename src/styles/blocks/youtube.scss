@@ -7,28 +7,33 @@
     }
 }
 .youtube_wrapper {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
     iframe {
         border-radius: 40px;
-        width: 1280PX;
-        height: 600PX;
+        width: 100%;
+                max-width: 1290PX;
+                height: 80vh;
+                max-height: 720PX;
     }
-}
-@media ( min-width: 1025px) and (max-width: 1439px) {
-    .youtube_wrapper {
-        iframe {
-            width: 1024PX;
-            height: 550PX;
-        }
-}
-}
-@media ( min-width: 320px) and (max-width: 1024px) {
-    .youtube_wrapper {
-        iframe {
-            width: 350PX;
-            height: 250PX;
-        }
-}
+    }
+
+@media ( min-width: 320px) and (max-width: 700px) {
+    
 .youtube {
     margin-top: 30PX;
 }
+.youtube_wrapper {
+    width: 90vw;
+    height: 35vh;
+    margin: 0 auto;
+    iframe {
+        border-radius: 40px;
+        width: 100%;
+                max-width: 1290PX;
+                height: 35vh;
+                max-height: 720PX;
+    }
+    }
 }
