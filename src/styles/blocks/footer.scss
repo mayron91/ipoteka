@@ -67,9 +67,37 @@ line-height: 21PX;
   @media ( min-width: 320px) and (max-width: 1024px) {
     .footer_wripper {
         flex-direction: column;
+        margin-top: 10px;
     }
     .foo_map {
         max-width: 335PX;
         height: auto;
+    }
+    .foo_contacts p {
+        padding: 10PX 0;
+        text-align: left;
+        font-family: Roboto;
+font-size: 12PX;
+font-weight: 400;
+line-height: 14PX;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+    .foo_nav {
+        margin-top: 40PX;
+    }
+    .foo_nav ul, .foo_nav li {
+        text-align: left;
+        
+
+    }
+    .foo_nav li a {
+        font-family: Roboto;
+        font-size: 12PX;
+        font-weight: 400;
+        line-height: 17PX;
+        letter-spacing: 0em;
+        text-align: left;
     }
 }

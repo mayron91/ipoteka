@@ -87,3 +87,43 @@ border-radius: 40px;
     right: 0;
 }
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+  .swiper_reviews {
+    margin-top: 30PX;
+}
+.listBox li{
+  width: 100%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
+  height: auto;
+  float:left;
+  padding: 10PX;
+}
+
+.listBox {
+  width: 1500%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
+  display: flex;
+  padding-left: 0;
+}
+.content {
+  min-height: 440PX;
+  
+  img {
+    max-height: 420PX;
+    object-fit: scale-down;
+  }
+}
+.arrow img {
+  display: none;
+}
+.arrow {
+  width: 40%;
+  height: 80%;
+  margin-top: -50%;
+}
+.arrow.back{
+  left:0;
+}
+
+.arrow.forward{
+  right: 0;
+}
+}

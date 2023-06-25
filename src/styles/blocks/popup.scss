@@ -76,3 +76,8 @@ overflow-x: none;
 .hidden {
   display: none;
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+  .popup {
+    width: 90%;
+  }
+}

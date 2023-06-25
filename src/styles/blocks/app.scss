@@ -89,3 +89,17 @@ select:focus > option:checked {
     width: 100%;
     max-width: 470PX;
 }
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .application {
+        margin-top: 0;
+        min-height: 860PX;
+        padding-bottom: 20PX;
+        h2 {
+            padding-top: 0;
+            padding-bottom: 100PX;
+        }
+    }
+    .app_wrapper {
+        padding: 20px;
+    }
+}

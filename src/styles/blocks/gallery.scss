@@ -22,10 +22,34 @@
     width: 100%;
     overflow: hidden;
 }
+.gallery_mob {
+    display: none;
+}
 @media ( min-width: 1024px) and (max-width: 1600px) {
     .gallery_smile {
         right: -8%;
     top: -55%;
     object-fit: cover;
+    }
+}
+@media ( min-width: 320px) and (max-width: 1024px) {
+    .gallery_smile {
+        right: 2%;
+        top: 50%;
+        width: 75PX;
+            height: 40PX;
+        img {
+            width: 75PX;
+            height: 40PX;
+        }
+    }
+    .gallery_header {
+        margin-top: 30PX;
+    }
+    .gallery {
+        display: none;
+    }
+    .gallery_mob {
+        display: block;
     }
 }

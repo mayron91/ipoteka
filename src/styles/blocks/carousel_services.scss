@@ -308,6 +308,9 @@ wee-slider .wee-slider__buttons button:before {
   translate: -40% -50%;
   rotate: 270deg;
 }
+.carousel__snapper_price_wrapper_mob {
+  display: none;
+}
 @media ( min-width: 1025px) and (max-width: 1439px) {
   wee-slider .wee-slider__slide {
     min-width: 1000PX;
@@ -318,16 +321,23 @@ wee-slider .wee-slider__buttons button:before {
   }
 }
 @media ( min-width: 320px) and (max-width: 1024px) {
+
   wee-slider .wee-slider__slide {
     min-width: 295PX;
   }
+  .carousel_services {
+    margin-top: 40PX;
+    background: #F4E861;
+  }
   .carousel__snapper_wrapper {
     flex-direction: column-reverse;
-    min-height: 546PX;
+    max-height: 546PX;
+    justify-content: space-between;
   }
   .carousel__snapper_wrapper_right {
     img {
       width: 100%;
+      border-radius: 40px;
     }
 
   }
@@ -337,6 +347,18 @@ wee-slider .wee-slider__buttons button:before {
   .service_back {
     background: none;
     border: none;
+    height: auto;
+    margin-top: 10PX;
+  }
+  .two_back_wrapper {
+    flex-direction: column;
+  }
+  .two_back {
+    background: none;
+    border: none;
+    height: auto;
+    margin-top: 10PX;
+    width: 100%;
   }
   .carousel__snapper_wrapper_left {
     padding: 0 10px; ul {
@@ -344,6 +366,63 @@ wee-slider .wee-slider__buttons button:before {
     }
   }
   .carousel__snapper_price_sub {
+    display: none;
+  }
+  .carousel_services_wrapper h2 {
+    padding-top: 10PX;
+  }
+  .service_back span {
+    text-align: left;
+    padding: 0 10px;
+    font-family: Roboto;
+font-size: 16PX;
+font-weight: 500;
+line-height: 19PX;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+  .two_back span {
+    text-align: left;
+    padding: 0 10px;
+    font-family: Roboto;
+font-size: 16PX;
+font-weight: 500;
+line-height: 19PX;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+  .carousel__snapper_wrapper_left {
+    h3 {
+      text-align: left;
+      padding: 0 10px;
+    }
+  }
+  .carousel__snapper_price_wrapper_mob {
+    display: block;
+    text-align: left;
+      padding: 0 10px;
+  }
+  .carousel__snapper_price_mob {
+    font-family: Roboto;
+font-size: 24PX;
+font-weight: 800;
+line-height: 28PX;
+letter-spacing: 0em;
+text-align: left;
+padding-top: 30PX;
+  }
+  .carousel__snapper_price_sub_mob {
+    font-family: Roboto;
+font-size: 11px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
+color: #A3A3A3;
+  }
+  .mob_hid {
     display: none;
   }
 }
