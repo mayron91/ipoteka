@@ -97,14 +97,14 @@
     width: 0;
   } 
   .listBoxCert li{
-    width: 100%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
+    width: 80%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
     height: auto;
     float:left;
-    padding: 10PX;
+    padding: 0 5PX;
   }
   
   .listBoxCert {
-    width: 800%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
+    width: 640%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
     display: flex;
     padding-left: 0;
     

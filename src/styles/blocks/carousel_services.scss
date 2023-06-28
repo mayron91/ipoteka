@@ -236,12 +236,13 @@ wee-slider .wee-slider__navdots {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-left: 0;
 }
 
 wee-slider .wee-slider__navdot {
   position: relative;
   display: block;
-  padding: 20PX;
+  padding: 0PX 15PX 15PX 15PX;
 }
 
 wee-slider .wee-slider__navdot:after {
@@ -251,8 +252,8 @@ wee-slider .wee-slider__navdot:after {
   bottom: 0;
   left: 50%;
   translate: -50% -50%;
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 12px;
   background: #FFF;
   border-radius: 50%;
 }
