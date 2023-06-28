@@ -351,118 +351,7 @@ const select1 = new ItcCustomSelect('#select-1');
     }
   });
 </script>
-<script>
-  document.getElementById('service1').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service1');
-    var elementTwo = document.getElementById('header');
 
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('service2').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service2');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('service3').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service3');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('servicebuild').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service3');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('service4').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service4');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('service5').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service5');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('service6').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service6');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
-<script>
-  document.getElementById('service7').addEventListener('click', function () {
-    var elementOne = document.getElementById('popup_service7');
-    var elementTwo = document.getElementById('header');
-
-    if (elementOne.classList.contains("hidden")) {
-      elementOne.classList.remove("hidden");
-      elementTwo.classList.add("hidden");
-    } else {
-      elementOne.classList.add("show");
-      elementTwo.classList.remove("sticky");
-    }
-  })
-</script>
 <script>
   class WeeSlider extends HTMLElement {
     constructor() {
@@ -551,4 +440,60 @@ $(document).ready(function() {
 	});
 });
 
+</script>
+<script>
+  $(".serv1").on('click', function() {
+  $(".custom-model-main1").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main1").removeClass('model-open');
+});
+</script>
+<script>
+  $(".serv2").on('click', function() {
+  $(".custom-model-main2").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main2").removeClass('model-open');
+});
+</script>
+<script>
+  $(".serv3").on('click', function() {
+  $(".custom-model-main3").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main3").removeClass('model-open');
+});
+</script>
+<script>
+  $(".serv4").on('click', function() {
+  $(".custom-model-main4").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main4").removeClass('model-open');
+});
+</script>
+<script>
+  $(".serv5").on('click', function() {
+  $(".custom-model-main5").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main5").removeClass('model-open');
+});
+</script>
+<script>
+  $(".serv6").on('click', function() {
+  $(".custom-model-main6").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main6").removeClass('model-open');
+});
+</script>
+<script>
+  $(".serv7").on('click', function() {
+  $(".custom-model-main7").addClass('model-open');
+}); 
+$(".close-btn, .bg-overlay").click(function(){
+  $(".custom-model-main7").removeClass('model-open');
+});
 </script>
