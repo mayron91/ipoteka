@@ -1,19 +1,21 @@
 .building_wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 120PX;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
     img {
         width: 50%;
         max-width: 960PX;
         max-height: 600PX;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
     }
 
     .building_content {
         width: 50%;
         padding: 30PX 0 0 140PX;
 
+        background: #FFFFFF;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.04);
         h3 {
             width: 50%;
         }

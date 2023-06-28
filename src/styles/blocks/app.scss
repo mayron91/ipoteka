@@ -25,7 +25,7 @@ transform: rotate(45deg);
     margin: 0 auto;
     background: #FFFFFF;
 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.04);
-border-radius: 40px;
+border-radius: 20px;
 padding: 60PX 80PX;
 p {
     text-align: center;
@@ -92,7 +92,7 @@ select:focus > option:checked {
 }
 @media ( min-width: 320px) and (max-width: 1024px) {
     .application {
-        margin-top: 0;
+        margin-top: 0PX;
         min-height: 860PX;
         padding-bottom: 20PX;
         h2 {
@@ -101,6 +101,17 @@ select:focus > option:checked {
         }
     }
     .app_wrapper {
-        padding: 20px;
+        padding: 15px 25px;
+    }
+    .app_back {
+        display: none;
+    }
+    .app_enroll {
+        input {
+            margin: 40px 0 0 0;
+        }
+    }
+    .itc-select {
+        margin: 30px 0 0 0;
     }
 }

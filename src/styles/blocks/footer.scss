@@ -39,7 +39,7 @@ line-height: 21PX;
     }
 }
 .foo_nav {
-    max-width: 290PX;
+    width: 220PX;
     ul,li {
         padding: 10px 0;
     }
@@ -99,16 +99,28 @@ text-align: left;
     }
   }
   @media ( min-width: 320px) and (max-width: 800px) {
+    .footer {
+        padding-top: 40PX;
+        h4 {
+            font-family: Roboto;
+font-size: 18PX;
+font-weight: 500;
+line-height: 21PX;
+letter-spacing: 0em;
+text-align: left;
+
+        }
+    }
     .footer_wripper {
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 0;
     }
     .foo_map {
         max-width: 100%;
         margin: 0 auto;
     }
     .foo_contacts p {
-        padding: 10PX;
+        padding: 10PX 0 0 0;
         text-align: left;
         font-family: Roboto;
 font-size: 12PX;
@@ -116,11 +128,9 @@ font-weight: 400;
 line-height: 14PX;
 letter-spacing: 0em;
 text-align: left;
-
     }
     .foo_nav {
         margin-top: 40PX;
-        padding: 10PX;
     }
     .foo_nav ul, .foo_nav li {
         text-align: left;
@@ -134,5 +144,8 @@ text-align: left;
         line-height: 17PX;
         letter-spacing: 0em;
         text-align: left;
+    }
+    .foo_icons {
+        margin-top: 20px;
     }
 }

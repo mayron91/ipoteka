@@ -27,10 +27,10 @@ li {
 }
 
 .listBox li{
-  width:33%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
+  width:32%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
   height: auto;
   float:left;
-  padding: 1%;
+  margin: 0 0.4%;  
 }
 
 .listBox {
@@ -42,7 +42,6 @@ li {
     width: 100%;
     max-width: 410PX;
     min-height: 550PX;
-    margin-right: 1%;
   display: flex;
   position: relative;
   align-items: center;
@@ -51,6 +50,7 @@ li {
   background: #FFFFFF;
 box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
 border-radius: 40px;
+overflow: hidden;
 }
 
 .content img {
@@ -91,6 +91,14 @@ border-radius: 40px;
   .swiper_reviews {
     margin-top: 30PX;
 }
+.containerBox {
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+    scroll-behavior: smooth;
+}
+.containerBox::-webkit-scrollbar {
+  width: 0;
+} 
 .listBox li{
   width: 100%; /*Change this depending the number of "li" that you want to have per page. For example; if you want 4 "li" per page the width will be 25% because you have to complete the 100% (25*4 = 100)*/
   height: auto;
@@ -102,28 +110,19 @@ border-radius: 40px;
   width: 1500%; /*Change this depending of total number of "li" that you have and depending the number of "li" that you want to have per page. For example; if you have a total of 12 "li" and each one has a 25% you will need a width of 300% (25*12 = 300)*/
   display: flex;
   padding-left: 0;
+scroll-snap-align: start;
+scroll-snap-stop:always;
 }
 .content {
   min-height: 440PX;
   margin: 0 auto;
+  
   img {
     max-height: 420PX;
     object-fit: scale-down;
   }
 }
-.arrow img {
-  display: none;
-}
 .arrow {
-  width: 40%;
-  height: 80%;
-  margin-top: -50%;
-}
-.arrow.back{
-  left:0;
-}
-
-.arrow.forward{
-  right: 0;
+  display: none;
 }
 }
